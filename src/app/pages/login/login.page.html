@@ -1,0 +1,28 @@
+<div class="content">
+  <div class="buttons">
+    <h1>LogIn</h1>
+    <p>Efetue o login atraves da sua conta ou de seu facebook</p>
+    
+    <div class="form">
+      <ion-item>
+        <ion-input type="email" placeholder="E-Mail" [(ngModel)]="user.email" ></ion-input>
+      </ion-item>
+
+      <ion-item>
+        <ion-input type="password" placeholder="****" [(ngModel)]="user.password"></ion-input>
+      </ion-item>
+
+      <ion-button id="login" type="button" (click)="login()" color="dark">
+        Entrar
+      </ion-button>
+    </div>
+
+    <ion-button id="facebook" type="button" (click)="facebookLogin()">
+      <ion-icon name="logo-facebook"></ion-icon>
+      Facebook
+    </ion-button>
+    <p class="register" (click)="registerLink()">Efetuar Cadastro</p>
+  </div>
+  <div class="image"></div>
+</div>
+

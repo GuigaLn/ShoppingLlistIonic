@@ -1,0 +1,54 @@
+div.header {
+  text-align: center;
+  
+  h1 {
+    font-size: 48px;
+    font-weight: 700;
+    color: rgb(0, 183, 255);
+  }
+
+  div {
+    margin: 0 auto;
+    background-color: rgb(182, 182, 182);
+    width: 20%;
+    height: 1px;
+  }
+
+  p {
+    font-size: 18px;
+    color: rgb(136, 136, 136);
+  }
+}
+
+div.content {
+  text-align: center;
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  margin: 0 auto;
+  max-width: 1600px;
+
+  background-image: url('../../../assets/dinheiro.png');
+  background-attachment: relative;
+  background-position: right center;
+  background-repeat: no-repeat;
+
+
+  div.content_itens {
+    margin: 10px auto;
+    flex-basis: 24%;
+    background-color: rgba(206, 206, 206, 0.4);
+    border-radius: 10px;
+    transition: background-color 0.4s;
+
+    &:hover {
+      background-color: rgba(0, 0, 0, 0.3);
+    }
+  }
+}
+
+@media(max-width: 900px) {
+  div.content_itens {
+    flex-basis: 45% !important;
+  }
+}

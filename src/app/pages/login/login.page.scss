@@ -1,0 +1,97 @@
+/* 
+** div content **
+*/
+div.content{
+  width: 100vw;
+  height: 100vh;
+
+  display: flex;
+
+  background: linear-gradient(180deg, #17191D 0%, #2D2F3B 85.45%);
+  align-items: center;
+  justify-content: center;
+  text-align: center;
+}
+
+/* 
+** buttons login | google **
+*/
+div.buttons{
+  width: 100%;
+  max-width: 800px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+
+  margin: 0 auto;
+
+  h1{
+    color: #FFF;
+    font-size: 48px;
+    font-weight: 700;
+  }
+
+  p{
+    color: #AAA;
+    font-size: 16px;
+  }
+
+  ion-item {
+    margin-top: 10px;
+   
+  }
+
+  #login {
+    margin-top: 10px;
+  }
+
+  > ion-button {
+    position: relative;
+  
+    font-size: 18px;
+    font-weight: 500;
+  
+    transition: transform 1s;
+    border: 10px !important;
+
+    &#google {
+      background-color: #FFF;
+      color: #000; 
+    }
+
+    &:hover{
+      transform: translateX(10px);
+    }
+
+    ion-icon {
+      font-size: 24px;
+      margin-right: 16px;
+    }
+  }
+
+  p.register {
+    transition: color 1s;
+    cursor: pointer;
+
+    &:hover {
+      color: #FFF;
+    }
+  }
+}
+
+/* 
+** div image **
+*/
+div.image{
+  flex: 1;
+  background: url('../../../assets/background.jpg');
+  background-repeat: no-repeat;
+  background-size: cover;
+  height: 100vh;
+
+  transition: filter 1s;
+
+  &:hover {
+    filter: grayscale(100%);
+  }
+}

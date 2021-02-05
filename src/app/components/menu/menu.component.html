@@ -1,0 +1,24 @@
+<ion-toolbar color="light">
+  <ion-buttons slot="secondary">
+    <ion-button data-href="shopping-list">
+      <ion-icon slot="icon-only" name="document-outline"></ion-icon>
+    </ion-button>
+
+    <ion-button data-href="/currency">
+      <ion-icon  slot="icon-only" name="card-outline"></ion-icon>
+    </ion-button>
+
+    <ion-button data-href="/climate">
+      <ion-icon slot="icon-only" name="thunderstorm-outline"></ion-icon>
+    </ion-button>
+  </ion-buttons>
+  <ion-buttons slot="primary">
+    <ion-button color="danger" (click)="signOut()">
+      <ion-icon slot="icon-only" name="log-out-outline"></ion-icon>
+    </ion-button>
+  </ion-buttons>
+  <ion-button data-href="/home" class="ion-margin" color="light">
+    <ion-icon name="home-outline"></ion-icon>
+  </ion-button>
+  
+</ion-toolbar>

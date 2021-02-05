@@ -1,0 +1,25 @@
+<app-menu></app-menu>
+
+<ion-content>
+  <div class="div_content">
+    
+    <a class="div_content_item" href="/shopping-list">
+      <ion-icon slot="icon-only" name="document-outline"></ion-icon>
+      <p>Lista de Compras</p>
+    </a>
+
+    <a class="div_content_item" href="/currency">
+      <ion-icon size="45px" slot="icon-only" name="card-outline"></ion-icon>
+      <p>Cotação</p>
+    </a>
+    
+    <a class="div_content_item" href="/climate">
+      <ion-icon slot="icon-only" name="thunderstorm-outline"></ion-icon>
+      <p>Previsão do Tempo</p>
+    </a>
+  </div>
+
+  <div class="button_delete" (click)="presentAlertConfirm()">
+    <ion-button color="danger" fill="outline">Excluir Conta</ion-button>
+  </div>
+</ion-content>

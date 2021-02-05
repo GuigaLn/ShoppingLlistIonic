@@ -1,0 +1,33 @@
+<app-menu></app-menu>
+
+<ion-content>
+  <div class="header">
+    <h1>CLIMA</h1>
+    <div></div>
+    <p>Verifique o Clima a partir de seu CEP.</p>
+  </div>
+
+
+  <div class="input_cep">
+    <ion-item>
+      <ion-input type="text" placeholder="Exmp: 08090284" [(ngModel)]="cep"></ion-input>
+    </ion-item>
+    <ion-button (click)="readDate()">PESQUISAR</ion-button>
+  </div>
+
+  <div class="content_detail" [ngClass]="{'ds_none': !lng}">
+    <div class="content_detail_information" [ngClass]="{'ds_none': !lng}">
+      <p>CEP: {{ cep }}</p>
+      <p>Endereço: {{ address }}</p>
+      <p>Cidade: {{ city }}</p>
+      <p>Latitude: {{ lat }}</p>
+      <p>Longitude: {{ lng }}</p>
+    </div>
+
+    <div class="content_detail_image">
+      <p>{{ statusWather }}</p>
+      <img src="{{iconWather}}" alt="Icon" [ngClass]="{'ds_none': !lng}">
+    </div>
+  </div>
+ 
+</ion-content>

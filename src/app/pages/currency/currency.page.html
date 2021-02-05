@@ -1,0 +1,17 @@
+<app-menu></app-menu>
+
+<ion-content class="ion-content">
+  <div class="header">
+    <h1>COTAÇÃO</h1>
+    <div></div>
+    <p>Verifique as cotações do dia em tempo Real.</p>
+  </div>
+
+  <div class="content">
+    <div class="content_itens" *ngFor="let item of currencys| keyvalue" scrollY="true">
+      <h2>{{ item.key }}</h2>
+      <p>Venda: {{ item.value.ask }}</p> 
+      <p>Compra: {{ item.value.bid }}</p> 
+    </div>
+  </div>
+</ion-content>

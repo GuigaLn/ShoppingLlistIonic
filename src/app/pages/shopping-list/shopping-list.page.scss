@@ -1,0 +1,29 @@
+.desativado {
+  s {
+    color: rgba(177, 177, 177, 0.5);
+  }
+}
+
+div.display {
+  display: flex;
+  justify-content: space-between;
+
+  ion-icon {
+    font-size: 38px;
+    color: rgb(15, 125, 228);
+    cursor: pointer;
+  }
+}
+
+ion-content {
+  text-align: center;
+}
+
+ion-list {
+  max-width: 900px;
+  margin: 0 auto;
+}
+.max_width_adicionar {
+  max-width: 900px;
+  margin: 0 auto;
+}

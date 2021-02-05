@@ -1,0 +1,65 @@
+<app-menu></app-menu>
+
+<ion-content>
+  <div class="max_width_adicionar">
+    <ion-item>
+      <ion-input type="text" placeholder="Item" [(ngModel)]="title" ></ion-input>
+      <ion-button color="danger" (click)="addItem()">Adicionar</ion-button>
+    </ion-item>
+  </div>
+
+  <ion-list *ngIf="!listProduct">
+    <ion-item *ngFor="let item of [0, 1, 2]">
+      <ion-avatar slot="start">
+        <ion-skeleton-text animated></ion-skeleton-text>
+      </ion-avatar>
+      <ion-label>
+        <h3>
+          <ion-skeleton-text animated style="width: 50%"></ion-skeleton-text>
+        </h3>
+        <p>
+          <ion-skeleton-text animated style="width: 80%"></ion-skeleton-text>
+        </p>
+        <p>
+          <ion-skeleton-text animated style="width: 30%"></ion-skeleton-text>
+        </p>
+      </ion-label>
+    </ion-item>
+  </ion-list>
+
+  <ion-list>
+    <ion-item-sliding *ngFor="let product of listProduct">
+      <ion-item>
+        <ion-label *ngIf="product.data.status == 'ativado'">
+          <div class="display">
+            <div>
+              <p>{{ product.data.title }}</p>
+            </div>
+
+            <div class="ativar" (click)="concluir(product.id)">
+              <ion-icon name="checkmark-outline"></ion-icon>
+            </div>
+          </div>
+        </ion-label>
+
+        <ion-label class="desativado" *ngIf="product.data.status != 'ativado'">
+          <s>{{ product.data.title }}</s>
+        </ion-label>
+        <ion-note color="primary" slot="end" *ngIf="product.price">{{ product.price | currency: 'BRL' }}</ion-note>
+      </ion-item>
+  
+      <ion-item-options side="end">
+        <ion-item-option color="danger" (click)="excluir(product.id)">
+          <ion-icon slot="top" name="trash"></ion-icon>
+          Excluir
+        </ion-item-option>
+      </ion-item-options>
+    </ion-item-sliding>
+  </ion-list>
+  
+  <ion-button class="finalizarCompras" id="login" type="button" (click)="finalizarCompras()" color="danger">
+    Finalizar
+  </ion-button>
+</ion-content>
+
+

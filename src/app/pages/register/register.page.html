@@ -1,0 +1,25 @@
+<div class="content">
+  <div class="image"></div>
+
+  <div class="buttons">
+    <h1>Registro</h1>
+    <p>Efetue o seu cadastro</p>
+    
+    <div class="form">
+      <ion-item>
+        <ion-input type="email" placeholder="E-Mail" [(ngModel)]="user.email"></ion-input>
+      </ion-item>
+
+      <ion-item>
+        <ion-input type="password" placeholder="****" [(ngModel)]="user.password"></ion-input>
+      </ion-item>
+
+      <ion-button id="login" type="button" (click)="register()" color="dark">
+        Registrar
+      </ion-button>
+
+      <p class="login" (click)="loginLink()">Efetuar Login</p>
+    </div>
+  </div>
+</div>
+
