@@ -19,9 +19,9 @@
 </p>
 
 <p align="center">
-  <img align="center" src="https://img.shields.io/github/issues/GuilhermeNallon/appIonicSeletivo"/>
-  <img align="center" src="https://img.shields.io/github/forks/GuilhermeNallon/appIonicSeletivo"/>
-  <img align="center" src="https://img.shields.io/github/stars/GuilhermeNallon/appIonicSeletivo"/>
+  <img align="center" src="https://img.shields.io/github/issues/GuigaLn/ShoppingLlistIonic"/>
+  <img align="center" src="https://img.shields.io/github/forks/GuigaLn/ShoppingLlistIonic"/>
+  <img align="center" src="https://img.shields.io/github/stars/GuigaLn/ShoppingLlistIonic"/>
 </p>
 
 <h4 align="center"> 
